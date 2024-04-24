@@ -40,16 +40,19 @@ This graph shows the number of decaesed cases in males and females. The total is
 
 ## Graphical results - use ggplot commands to do this  
 
-```{r}
-basicCN <- ggplot(kRdata,aes(x=result,y=country))
-```
 
 ```{r}
-basicCN + geom_boxplot()
+basicNN <- ggplot(kRdata,aes(y=country,x=result))
 ```
-  This is a graph that shows the countries most effected by the deaths of covid 19 were mongolia and koreaa 
+ 
   
-  
+
+
+```{r}
+basicNN + geom_point()
+```
+   This is a graph that shows the countries most effected by the deaths of covid 19 were mongolia and koreaa
+ 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
@@ -57,6 +60,18 @@ This graph is a fancier version showinng the mean number of deaths and survivals
   
 ## Numerical results
 
+```{r}
+cor(result~country,data=kRdata)
+```
+
+```{r}
+cont_table <- table(kRdata$country, kRdata$result)
+```
+
+```{r}
+print(cont_table)
+```
+With these results it shows that korrea was heavily affected by the deaths of the covid 19 disease. To get this plot i simply made a cont_table with the different results from each country 
 
 ## Inferential results 
 
