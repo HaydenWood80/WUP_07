@@ -40,14 +40,14 @@ This graph shows the number of decaesed cases in males and females. The total is
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+basicCN <- ggplot(kRdata,aes(x=result,y=country))
+```
 
-
-  
-
-
-
-
-
+```{r}
+basicCN + geom_boxplot()
+```
+  This is a graph that shows the countries most effected by the deaths of covid 19 were mongolia and koreaa 
   
 ## Numerical results
 
