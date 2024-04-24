@@ -83,3 +83,4 @@ This gives us a p value of 2e-06
 
 ## Conclusions
 
+Based on the analysis of the contingency table and the results of the chi-square test (p < 0.05), there is strong evidence to reject the null hypothesis. This suggests that there is a significant association between the country of origin and the outcome (dead/alive) of the individuals. so we would reject the $H_0$
