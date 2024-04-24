@@ -49,6 +49,12 @@ basicCN + geom_boxplot()
 ```
   This is a graph that shows the countries most effected by the deaths of covid 19 were mongolia and koreaa 
   
+  
+```{r}
+basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+```
+This graph is a fancier version showinng the mean number of deaths and survivals per country
+  
 ## Numerical results
 
 
