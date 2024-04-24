@@ -75,8 +75,11 @@ With these results it shows that korrea was heavily affected by the deaths of th
 
 ## Inferential results 
 
-
-
+```{r}
+chi_sq_test <- chisq.test(cont_table)
+print(chi_sq_test)
+```
+This gives us a p value of 2e-06
 
 ## Conclusions
 
